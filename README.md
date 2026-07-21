@@ -1,6 +1,6 @@
-# grace-ai-spine：给 AI 装上脊梁骨
+# grace-no-yesman：不让 AI 顺着你
 
-两个 Claude Code 的 Agent Skill，一个负责做（grace-builder），一个负责撕（grace-critic）。配对使用，让 AI 对你的文章、方案、想法做真正有脊梁骨的审查——不是"总体不错，建议优化一下"那种废话，而是逐条引用原文举证、打分、回答"该不该叫停"。
+两个 Claude Code 的 Agent Skill，一个负责做（grace-builder），一个负责撕（grace-critic）。配对使用，让 AI 对你的文章、方案、想法做真正不顺着你的审查——不是"总体不错，建议优化一下"那种废话，而是逐条引用原文举证、打分、回答"该不该叫停"。
 
 解决的问题：**AI 默认只会鼓掌。** 你让它审稿，它说"很好，可以考虑加一些……"；你让它提意见，它先夸三段再轻轻带一句。这两个 skill 就是把 AI 的讨好模式关掉。
 
@@ -19,7 +19,7 @@
 
 ## 为什么不是一个 skill
 
-拆成两个是刻意的：grace-critic 只管攻击不管修，grace-builder 只管修和驳不管打分。混在一起，AI 会"左手打右手"——自己批评完又自己和稀泥。分开后各自有各自的脊梁。
+拆成两个是刻意的：grace-critic 只管攻击不管修，grace-builder 只管修和驳不管打分。混在一起，AI 会"左手打右手"——自己批评完又自己和稀泥。分开后谁都不能既当裁判又当选手。
 
 ---
 
@@ -30,8 +30,8 @@
 ### 方式一：一行命令安装（推荐）
 
 ```
-npx skills add https://github.com/GraceXie0727/grace-ai-spine --skill grace-critic
-npx skills add https://github.com/GraceXie0727/grace-ai-spine --skill grace-builder
+npx skills add https://github.com/GraceXie0727/grace-no-yesman --skill grace-critic
+npx skills add https://github.com/GraceXie0727/grace-no-yesman --skill grace-builder
 ```
 
 只想要毒舌审稿功能，装第一行就够。
@@ -40,7 +40,7 @@ npx skills add https://github.com/GraceXie0727/grace-ai-spine --skill grace-buil
 
 > 帮我安装 `grace-critic` 和 `grace-builder` 这两个 Claude Code skill。请：
 > 1. 确保 `~/.claude/skills/` 目录存在（不存在就创建）
-> 2. 执行 `git clone https://github.com/GraceXie0727/grace-ai-spine.git` 到临时目录
+> 2. 执行 `git clone https://github.com/GraceXie0727/grace-no-yesman.git` 到临时目录
 > 3. 把临时目录里的 `grace-critic/` 和 `grace-builder/` 两个文件夹复制到 `~/.claude/skills/`
 > 4. 验证：`ls ~/.claude/skills/grace-critic/` 和 `ls ~/.claude/skills/grace-builder/` 应该都能看到 `SKILL.md`
 > 5. 告诉我安装好了，之后我说"批评一下"或"对打"就会触发这两个 skill
@@ -50,7 +50,7 @@ npx skills add https://github.com/GraceXie0727/grace-ai-spine --skill grace-buil
 ### 方式三：手动命令行
 
 ```
-git clone https://github.com/GraceXie0727/grace-ai-spine.git /tmp/grace-ai-spine && cp -r /tmp/grace-ai-spine/grace-critic /tmp/grace-ai-spine/grace-builder ~/.claude/skills/ && rm -rf /tmp/grace-ai-spine
+git clone https://github.com/GraceXie0727/grace-no-yesman.git /tmp/grace-no-yesman && cp -r /tmp/grace-no-yesman/grace-critic /tmp/grace-no-yesman/grace-builder ~/.claude/skills/ && rm -rf /tmp/grace-no-yesman
 ```
 
 或者最原始的手动方式：点本页右上角绿色的「Code」按钮 →「Download ZIP」，解压后把 `grace-critic` 和 `grace-builder` 两个文件夹（各自里面有 `SKILL.md`）复制到 `~/.claude/skills/`（Windows 是 `C:\Users\你的用户名\.claude\skills\`），重启 Claude Code。
