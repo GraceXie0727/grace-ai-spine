@@ -122,11 +122,9 @@ git clone https://github.com/GraceXie0727/grace-ai-spine.git /tmp/grace-ai-spine
 
 ## 授权
 
-本项目采用 [CC BY-NC 4.0](LICENSE) 授权。人话版：
+[CC BY-NC 4.0](LICENSE) © 2026 [Grace](https://github.com/GraceXie0727)
 
-- 可以：免费使用、修改、分享给任何人
-- 必须：保留署名和来源说明
-- 不可以：商业用途（比如放进付费产品或课程出售）。有商业需求请联系作者取得授权
+可免费使用、修改、分享，须保留署名；不可商用（放进付费产品或课程出售）。有商业需求请联系作者取得授权。
 
 ---
 
