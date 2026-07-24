@@ -130,4 +130,4 @@ git clone https://github.com/GraceXie0727/grace-no-yesman.git /tmp/grace-no-yesm
 
 ---
 
-作者：Grace（[X @Gracexie0727](https://x.com/Gracexie0727)），一个不会编程的文科生创业者。有问题欢迎提 [Issue](../../issues)~
+作者：Grace（[X @Gracexie0727](https://x.com/Gracexie0727)），有问题欢迎提 [Issue](../../issues)~
