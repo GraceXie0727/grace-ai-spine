@@ -64,7 +64,7 @@ npx skills add https://github.com/GraceXie0727/grace-no-yesman --skill grace-no-
 它会输出一份这样的报告：
 
 ```
-🗡️ 方案审查
+方案审查
 
 结论：建议推翻重来——"火 → 有人看 → 过万 → 变现"整条链没有一处逻辑站得住
 最大的问题：把"日更三个月"当成了"粉丝过万"的充分条件，中间没有任何因果
